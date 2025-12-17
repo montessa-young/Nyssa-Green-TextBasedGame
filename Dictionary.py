@@ -43,5 +43,49 @@ def mean_npc_dialogue(player_name="GORLOCK THE DESTROYER"):
             print("\nNPC: *You have gotten beaten up and have lost $200 coins*")
             dialogue_state = "QUIT"
 
+def mean_npc_dialogue(player_name="CLIFERD"):
+    dialogue_state = "START"
+    while dialogue_state != "QUIT":
+        if dialogue_state == "START":
+            print(f"NPC: My day gets worse every time I see a traveler like you.")
+            print("1. Im not like any other travler, Im on an ecpic life changing adventure!")
+            print("2. My day gets wores everytime I see people like you that act like a jerk for no reason. ")
+            print("3. Walk by and ignore.")
+            choice = input("> ").strip()
+            if choice == "1":
+                dialogue_state = "Im not like any other travler" "Your nobody, you sound like the others that have past by here you are basic!"
+            elif choice == "2":
+                dialogue_state = "OoooOOo, your like a little kid givig back the same insult."
+            elif choice == "3":
+                dialogue_state = "You give me a look and now your walking away? Wowww you think your all that? think your Mr tought guy?"
+            else:
+                print("NPC: Whatever your not even worth my time")
+
+        elif dialogue_state == 'Im not like any other travler' "Your nobody, you sound like the others that have past by here you are basic!":
+            print(f"\nNPC: Your just gonna walk around untill you get old and die looking for prupose trying have your life chanching adventure.")
+            print("NPC: Treasure hunting is a fool's errand. You'll probably end up eaten by a slime.")
+            print("1. You don't need to be so rude! All I did was walk through and you made a comment about me.")
+            print("2. LOOK AT YOU, YOUR JUST STANDING HERE JUDGEING PEOPLE WHO ARE DOING SOMTHING WITH THEIR LIVES!")
+            print("3. End conversation (Quit).")
+            choice = input("> ").strip()
+
+            if choice == "1":
+                dialogue_state = "YOUR_BASIC"
+            elif choice == "2":
+                dialogue_state = "YOU_GET_ROBBED"
+            elif choice == "3":
+                dialogue_state = "QUIT"
+            else:
+                print("NPC: Make a proper choice, you amateur.")
+
+        elif dialogue_state == "YOUR_BASIC":
+            print("\nNPC: Go cry me a river, god people like you are sensitve.")
+            dialogue_state = "Go somewhere else and grow a back bone"
+
+
+        elif dialogue_state == "YOU_GET_ROBBED":
+            print("\nNPC: *You have gotten beaten up and have lost $200 coins*")
+            dialogue_state = "QUIT"
+
 
 
