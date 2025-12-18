@@ -1,10 +1,43 @@
-import random
+from intro import intro
+from Dictionary import mean_npc_dialogue
+from dialogue import gorlock_dialogue
+from Ending import ending
 
 
-print("Hello young traveler.")
+nice_npc_one = {
+    "Name" : "Jeff",
+    "Age" : "32",
+    "Race" : "Dark Elf",
+    "Inventory" : "Sword Shield 1/350 of an apple"
+}
 
-print("Who are you?")
-print("Where am I?")
-who_where = input("Enter (1) or (2): ")
+nice_npc_two = {
+    "Name" : "Michael",
+    "Age" : "18",
+    "Race" : "Eladrin",
+    "Inventory" : "Staff of Merlin"
+}
 
-if who_where
+nice_npc_three = {
+    "Name" : "Will The Wise",
+    "Age" : "17",
+    "Race" : "Human",
+    "Inventory" : "N/A"
+}
+
+nice_npc_four = {
+    "Name" : "The Fallen Knight",
+    "Age" : "Unknown",
+    "Race" : "Unknown",
+    "Inventory" : "Unknown"
+}
+
+#Start of Game
+
+intro()
+ending()
+mean_npc_dialogue()
+gorlock_dialogue()
+
+
+
